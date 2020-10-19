@@ -1,1 +1,26 @@
 @import "../../styles/index.scss";
+
+body{
+    background-color: black;
+}
+
+h1{
+    color: white;
+    @include center-center();
+}
+
+.view, .view-responsive{
+    height: 1080px;
+    color: $soft_brown;
+    font-family: niveau-grotesk-small-caps, sans-serif;
+    font-size:40px;
+    @include center-center();
+    border: 1px solid $soft_brown;
+    span{
+        color: white;
+    }
+}
+
+.view-responsive{
+    height: 100vh;
+}
