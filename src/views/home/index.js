@@ -1,21 +1,33 @@
 import React from "react";
 import "./index.scss";
+import Logo from "../../assets/images/6thman-logo.png";
+import Menu from "../../components/menu";
 
 const App = () => {
-  const views = [1,2,3]
+  
   return <div>
-    <h1>Fixed</h1>
-    {
-      views.map( (i,c)=>{
-        return <div key={i} className="view"><b>View fixed height: 1080px <span>{c}</span></b></div>
-      } )
-    }
-        <h1>Responsive</h1>
-    {
-      views.map( (i,c)=>{
-        return <div key={i} className="view-responsive"><b>View responsive height <span>{c}</span></b></div>
-      } )
-    }
+<div className=" hero ball-alone">
+  <div className="container-fluid">
+    <div className="row">
+      <div className="col-12 view-responsive">
+        <img src={Logo} className="main-logo"/>
+        <div className="big-title">
+          <div>
+          EVERY TEAM NEEDS 
+          </div>
+          <div>
+          &#160;A GREAT BENCH
+          </div>
+        </div>
+        <div className="paragraph">
+          We’ll come on the court and support your team’s efforts in the highly competitive marketing world by providing innovative solutions for your creative needs. Let us come play for you and help you achieve your brand’s vision.
+        </div>
+      </div>
+    </div>
+    <Menu />
+  </div>
+</div>
+      
   </div>;
 };
 
