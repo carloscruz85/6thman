@@ -1,6 +1,6 @@
 import React from 'react'
 import "./index.scss";
-import Logo from "../../assets/images/6thman-logo.png";
+import Logo from "../../assets/images/logo-6thman.png";
 import Menu from "../../components/menu";
 
 const Hero = () => {

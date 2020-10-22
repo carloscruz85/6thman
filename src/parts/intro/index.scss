@@ -1,15 +1,89 @@
 @import "../../styles/index.scss";
 
-$aux : 3px $soft_brown solid;
+$aux : 1px $soft_brown solid;
+
+body{
+    //background-color: sandybrown;
+}
 
 .intro{
-    border: 1px white solid;
-    @include multi(height, 50vh, 50vh, 50vh, 50vh);
+    overflow: hidden;
+    //border: 1px white solid;
+    @include multi(height, 100vh, 50vh, 60vh, 60vh);
     @include center-center();
-    .divisor-left{
-        border-left: $aux ;
+    text-align: left;
+     .animated-ball, .animated-ball-min{
+       @include multi(display, none, none, block, block);
+        @include multi(width, 50vh, 50vh, 60vh, 60vh);
+        height: auto;
+        position: absolute;
+        left: 0px;
+        @include multi(top, -200px, -20px, -20px, -60px);
+        animation: Rotate 10s ease-in-out infinite, Move 10s ease-in-out infinite;
     }
-    .divisor-right{
-        border-right: $aux ;
+
+    .animated-ball-min{
+      @include multi(display,  block, block, none, none);
+      animation: Rotate 10s ease-in-out infinite;
     }
+
+    
+}
+
+@keyframes Rotate { 
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(45deg); }
+    50% { transform: rotate(45deg); }
+    75% {transform: rotate(0deg); }
+    100% { transform: rotate(0deg); }
+  }
+
+  @keyframes Move{
+    0%   { left: 0px; }
+    25% { left: 200px; }
+    50% { left: 200px; }
+    75% { left: 0px; }
+    100% { left: 0px; }
+  }
+
+  .intro-text{
+    font-family: avenir-book;
+      border-left: solid 5px $soft_brown !important;
+      @include multi(padding-left, 1.5rem, 1.5rem, 1rem, 1.5rem);
+      .intro-logo{
+        @include multi(width, 100px, 100px, 100px, 200px);
+        height: auto;
+      }
+      .intro-explain{
+          margin-top: 0.5rem;
+          color: $soft_brown;
+          @include multi(padding-bottom, 40px, 40px, 40px, 40px);
+      }
+
+      .intro-content{
+        @include multi(width, 90%, 80%, 80%, 80%);
+        @include multi(font-size, 0.8rem, 1rem, 0.8rem, 1rem);
+        @include multi(line-height, 1.5rem, 1.3rem, 1.3rem, 2rem);
+        font-style: italic;
+        opacity: 0.7;
+      }
+    margin-bottom: 2rem;
+  }
+  .intro-button-container{
+     @include center-center();
+     @include multi( flex-direction, row, row, column, column );
+     @include multi( align-items, center, center, flex-start, flex-start );
+    .intro-button{
+      background: rgb(150,73,34);
+      background: linear-gradient(184deg, rgba(150,73,34,1) 0%, rgba(100,34,0,1) 100%);
+      padding: 1rem;
+      border-radius: 1.5rem;
+      padding: 0.5rem 2rem;
+      @include multi(font-size, 0.8rem, 0.8rem, 0.8rem, 1rem);
+    }
+  }
+
+
+.intro-container{
+ 
 }

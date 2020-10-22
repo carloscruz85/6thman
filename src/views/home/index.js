@@ -6,7 +6,7 @@ import Intro from "../../parts/intro/";
 const App = () => {
   
   return <div>
-      {/* <Hero /> */}
+      <Hero />
       <Intro />
     </div>;
 };

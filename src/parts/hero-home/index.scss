@@ -4,6 +4,10 @@ body{
     background-color: black;
 }
 
+.hero{
+    @include back-image();
+}
+
 h1{
     color: white;
     @include center-center();
@@ -55,7 +59,7 @@ h1{
 }
 
 .ball-alone{
-    background-image: url(../../assets/images/hero.jpg);
+    background-image: url(../../assets/images/Home-Hero.jpg);
 }
 
 
