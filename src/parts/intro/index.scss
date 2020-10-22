@@ -1,0 +1,15 @@
+@import "../../styles/index.scss";
+
+$aux : 3px $soft_brown solid;
+
+.intro{
+    border: 1px white solid;
+    @include multi(height, 50vh, 50vh, 50vh, 50vh);
+    @include center-center();
+    .divisor-left{
+        border-left: $aux ;
+    }
+    .divisor-right{
+        border-right: $aux ;
+    }
+}
