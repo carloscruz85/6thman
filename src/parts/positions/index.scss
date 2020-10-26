@@ -1,0 +1,133 @@
+@import "../../styles/index.scss";
+
+.positions-container{
+  
+    @include multi(height, 100vh, 100vh, 100vh, 100vh);
+    @include center-center();
+    background-image: url(../../assets/images/positions.jpg);
+    @include back-image();
+    .positions-services{
+        @include multi(width, 100%, 100%, 80%, 60%);
+    }
+    .positions-title{
+        font-family: niveau-grotesk-small-caps, sans-serif;
+        @include multi(font-size, 30px, 30px, 30px, 40px);
+        font-weight: 900;
+    }
+    .positions-subtitle{
+        color: $soft_brown;
+        @include multi(font-size, 20px, 20px, 15px, 20px);
+        @include multi(margin-bottom, 1rem, 1rem, 1rem, 5rem);
+        font-weight: bold;
+    }
+
+    .positions-item{
+        font-size:10px;
+        font-family: niveau-grotesk-small-caps, sans-serif;
+        @include multi(margin-bottom, 1rem, 1rem, 1.5rem, 2.5rem);
+        .positions-title-inner{
+          @include multi(font-size, 12px, 20px, 12px, 25px);
+          @include multi(margin-top, 0.3rem, 2rem, 1rem, 1.8rem);
+        }
+
+    }
+}
+
+.item-container{
+  text-transform: uppercase;
+  font-size: 10px;
+}
+
+
+//animations
+ 
+  .icon {
+    transition: all 0.2s ease-in-out;
+    @include multi(width, 60%, 60%, 30%, 40%);
+    height: auto;
+  }
+    
+  $animate: all 0.1s ease-in-out;
+  
+  /** Hover-related CSS **/
+  
+  .example {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    margin: 0 0 10px;
+    .hover {
+      //font-size: 36px;
+      text-align: center;
+      margin: 0 auto;
+      padding: 0;
+      transition: $animate;
+      position: relative;
+      &:before,
+      &:after {
+        content: "";
+        position: absolute;
+        bottom: -10px;
+        width: 10px;
+        height: 3px;
+        margin: 5px 0 0;
+        transition: $animate;
+        transition-duration: 0.3s;
+        opacity: 1;
+        background-color: #92511f;
+        box-shadow: 0px 10px 20px #000000b3;
+      }
+  
+      &.hover-3 {
+        &:before {
+          left: 50%;
+          border-top-right-radius: 5px;
+          border-bottom-right-radius: 5px;
+        }
+        &:after {
+          right: 50%;
+          border-top-left-radius: 5px;
+          border-bottom-left-radius: 5px;
+        }
+      }
+    }
+  }
+  
+  .item-container:hover {
+    cursor: pointer;
+    .hover {
+      &:before,
+      &:after {
+        width: 100%;
+        opacity: 1;
+      }
+      &.hover-3 {
+        &:before,
+        &:after {
+          width: 15%;
+        }
+      }
+    }
+  
+    .icon{
+      transform: translateY(-10px);
+    }
+  }
+  
+  .row{
+    @include multi( margin, 1rem 0, 1rem 0, 1rem 0, 5rem 0 );
+  }
+
+  .intro-button-container{
+    @include center-center();
+    //@include multi( flex-direction, row, row, column, column );
+    //@include multi( align-items, center, center, flex-start, flex-start );
+   .intro-button{
+     background: rgb(150,73,34);
+     background: linear-gradient(184deg, rgba(150,73,34,1) 0%, rgba(100,34,0,1) 100%);
+     padding: 1rem;
+     border-radius: 1.5rem;
+     padding: 0.5rem 2rem;
+     @include multi(font-size, 0.8rem, 0.8rem, 0.8rem, 1rem);
+   }
+ }
