@@ -14,7 +14,7 @@
     margin: 2rem 0;
     @include center-center();
 }
-.title{
-  @include multi(width, 50%, 80%, 100%, 100%);
-}
+  .title{
+    @include multi(width, 50%, 80%, 100%, 100%);
+  }
 }
