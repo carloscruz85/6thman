@@ -62,5 +62,8 @@ h1{
     background-image: url(../../assets/images/Home-Hero.jpg);
 }
 
-
-
+.arrow{
+    fill: $soft_brown;
+    @include center-center();
+    cursor: pointer;
+}
