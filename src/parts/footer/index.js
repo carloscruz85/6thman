@@ -63,13 +63,13 @@ const Footer = () => {
             <div className="footer">
                 <div className="container">
                     <div className="row">
-                        <div className="col-4">
+                        <div className="col-8 col-sm-4">
                             ©{year} 6th Man Creative. All Rights Reserved. Muffin Group
                         </div>
-                        <div className="col-4 arrow" onClick={()=>{ goTop() }}>
+                        <div className="col-4 col-sm-4 arrow" onClick={()=>{ goTop() }}>
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0 16.67l2.829 2.83 9.175-9.339 9.167 9.339 2.829-2.83-11.996-12.17z"/></svg>
                         </div>
-                        <div className="col-4">
+                        <div className="col-sm-4">
                             
                         </div>
                     </div>

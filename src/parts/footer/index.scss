@@ -1,12 +1,12 @@
 @import "../../styles/index.scss";
 
 .footer-container{
-    @include multi(font-size, 1rem, 1rem, 0.5rem, 1rem);
+    @include multi(font-size, 0.8rem, 1rem, 0.5rem, 1rem);
     padding: 2rem 0 0 0;
     .logo-container{
         @include center-center();
         .logo{
-            width: 200px;
+            @include multi( width, 100px, 100px, 150px, 200px );
             height: auto;
         }
     }
@@ -18,7 +18,7 @@
             margin: 2rem 0; 
             text-transform: uppercase;
         img{
-            @include multi( width, 50px, 50px, 50px, 20px );
+            @include multi( width, 20px, 50px, 20px, 20px );
             height: auto;
             margin-right: 0.5rem;
         }
@@ -34,7 +34,7 @@
     }
 
     .move{
-        @include multi(padding-left, 10%, 10%, 10%, 10%);
+        @include multi(padding-left, 30%, 10%, 10%, 10%);
     }
 
     .footer{
