@@ -23,3 +23,16 @@
   background-size: cover;
   background-position: center center;
 }
+
+
+.title{
+  font-family: niveau-grotesk-small-caps, sans-serif;
+  @include multi(font-size, 30px, 30px, 30px, 40px);
+  font-weight: 900;
+}
+.subtitle{
+  color: $soft_brown;
+  @include multi(font-size, 20px, 20px, 15px, 20px);
+  @include multi(margin-bottom, 1rem, 1rem, 1rem, 5rem);
+  font-weight: bold;
+}

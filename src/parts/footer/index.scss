@@ -1,0 +1,55 @@
+@import "../../styles/index.scss";
+
+.footer-container{
+    @include multi(font-size, 0.8rem, 1rem, 0.5rem, 1rem);
+    padding: 2rem 0 0 0;
+    .logo-container{
+        @include center-center();
+        .logo{
+            @include multi( width, 100px, 100px, 150px, 200px );
+            height: auto;
+        }
+    }
+ 
+    ul{
+        //border: 1px solid #dedede;
+        list-style-type: none;
+        li{
+            margin: 2rem 0; 
+            text-transform: uppercase;
+        img{
+            @include multi( width, 20px, 50px, 20px, 20px );
+            height: auto;
+            margin-right: 0.5rem;
+        }
+        }
+    }
+    [class*="col-"] {
+        display: flex;
+        flex-flow: column nowrap;
+        //justify-content: center;
+        //align-items: center;
+        //border: 1px solid #dedede;
+        //text-align: center;
+    }
+
+    .move{
+        @include multi(padding-left, 30%, 10%, 10%, 10%);
+    }
+
+    .footer{
+        font-size: 0.8rem;
+        //padding: 0.1rem;
+        background: rgb(150,73,34);
+        background: linear-gradient(184deg, rgba(150,73,34,1) 0%, rgba(100,34,0,1) 100%);
+        .row{
+            padding: 1rem 0;
+            margin: 0;
+        }
+    }
+    .arrow{
+        fill: white;
+        @include center-center();
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,20 @@
+@import "../../styles/index.scss";
+
+.clients-container{
+  @include multi(height, 100vh, 100vh, 100vh, 80vh);
+  @include center-center();
+  @include back-image();
+  background-image: url(../../assets/images/big-ball.gif);
+  img{
+    width: 80%;
+    height: auto;
+    
+  }
+  [class*="col-"] {
+    margin: 2rem 0;
+    @include center-center();
+}
+  .title{
+    @include multi(width, 50%, 80%, 100%, 100%);
+  }
+}

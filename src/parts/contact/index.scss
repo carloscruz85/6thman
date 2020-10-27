@@ -1,0 +1,71 @@
+@import "../../styles/index.scss";
+
+.contact-container{
+  @include multi(height, 100vh, 100vh, 100vh, 100vh);
+  @include center-center();
+  @include back-image();
+  background-image: url(../../assets/images/contact.gif);
+  input, textarea{
+    background-color: #1F1F1F;
+    border: 0;
+    width: 100%;
+    @include multi(margin,  0.2em 0,  0.8rem 0,  0.2rem 0,  0.8rem 0);
+    padding: 1rem 1rem;
+    @include multi(padding, 0.5rem 0.5rem, 1rem 1rem, 0.5rem 0.5rem, 1rem 1rem);
+    color: $soft_brown;
+    font-family: avenir-book;
+
+
+    &:focus{
+      outline: none !important;
+      border:1px solid $soft_brown;
+      
+    }
+    &.about{
+      height: 300px;
+      @include multi(height, 150px, 300px, 100px, 300px);
+      margin-bottom: 2rem;
+    }
+
+  }
+  ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: $dark_brown;
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: $dark_brown;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: $dark_brown;
+  }
+}
+
+.intro-form{
+  text-align: left !important;
+  font-family: avenir-book;
+}
+
+.subtitle{
+  margin-bottom: 0;
+}
+
+.button{
+  background: rgb(150,73,34);
+  background: linear-gradient(184deg, rgba(150,73,34,1) 0%, rgba(100,34,0,1) 100%);
+  padding: 1rem;
+  border-radius: 1.5rem;
+  padding: 0.5rem 2rem;
+  @include multi(font-size, 0.8rem, 0.8rem, 0.8rem, 1rem);
+  cursor: pointer;
+  }
+
+.msg{
+  margin: 1rem 0;
+  border: 1px solid $soft_brown;
+  padding: 1rem;
+  width: 100%;
+  font-family: avenir-book;
+  letter-spacing: 0.1rem;
+}
