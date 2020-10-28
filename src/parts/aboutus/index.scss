@@ -1,0 +1,23 @@
+@import "../../styles/index.scss";
+
+.aboutuspart-container{
+  @include multi(height, 100vh, 100vh, 100vh, 100vh);
+  //@include center-center();
+  @include back-image();
+  background-image: url(../../assets/images/aboutus.jpg);
+  .text-container{
+    @include center-center();
+    @include multi(height, 100vh, 100vh, 100vh, 100vh);
+    .title{
+      @include multi( font-size, 1rem,1rem,2rem,4rem);
+      border-bottom: 5px solid $soft_brown;
+      @include multi(padding-bottom, 1rem, 1rem, 0.5rem, 1rem);
+      
+    }
+    .subtitle{
+      @include multi( margin-top, 1rem, 1rem, 2rem, 4rem);
+      color: white;
+      font-family: avenir-book;
+    }
+  }
+}

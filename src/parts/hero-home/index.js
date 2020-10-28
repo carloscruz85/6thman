@@ -7,7 +7,7 @@ const Hero = () => {
     return (
         <div className=" hero ball-alone">
             <div className="container-fluid">
-                <div className="row">
+                <div className="row p-0 m-0">
                 <div className="col-12 view-responsive">
                     <img alt="6thman" src={Logo} className="main-logo"/>
                     <div className="big-title">
