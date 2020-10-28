@@ -2,13 +2,13 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "normalize.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import App from "./App";
+import Routes from "./Routes";
 import * as serviceWorker from "./serviceWorker";
 import "./index.css";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Routes />
   </React.StrictMode>,
   document.getElementById("root")
 );

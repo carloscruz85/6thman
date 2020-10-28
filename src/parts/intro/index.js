@@ -1,7 +1,5 @@
 import React from 'react'
 import "./index.scss";
-import Logo from "../../assets/images/6thman-logo.png";
-import Menu from "../../components/menu";
 import Ball from "../../assets/images/ball.png";
 import LogoText from "../../assets/images/logo-6thman-text.png";
 
@@ -11,12 +9,12 @@ const Intro = () => {
             <div className="container-fluid">
                 <div className="row">
                     <div className="col-12 col-md-6 ">
-                        <img src={Ball} className="animated-ball" />
-                        <img src={Ball} className="animated-ball-min" />
+                        <img alt="ball" src={Ball} className="animated-ball" />
+                        <img alt="ball" src={Ball} className="animated-ball-min" />
                     </div>
                     <div className="col-12 col-md-6 intro-container">
                         <div className="intro-text">
-                            <img src={LogoText} className="intro-logo"/>
+                            <img alt="6thman" src={LogoText} className="intro-logo"/>
                             <div className="intro-explain">
                                 [Siksth-Man] - Noun / Basketball term
                             </div>

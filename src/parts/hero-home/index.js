@@ -9,7 +9,7 @@ const Hero = () => {
             <div className="container-fluid">
                 <div className="row">
                 <div className="col-12 view-responsive">
-                    <img src={Logo} className="main-logo"/>
+                    <img alt="6thman" src={Logo} className="main-logo"/>
                     <div className="big-title">
                     <div>
                     EVERY TEAM NEEDS 
