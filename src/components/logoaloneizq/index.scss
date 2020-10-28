@@ -1,0 +1,12 @@
+@import "../../styles/index.scss";
+
+.logo-alone-izq-container{
+    img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        @include multi(padding, 2rem, 2rem, 2rem, 6rem);
+        @include multi(width, 100px, 100px, 75px, 125px);
+        box-sizing: content-box;
+    }
+}

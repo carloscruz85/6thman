@@ -9,9 +9,9 @@
     @include center-center();
     @include multi(height, 100vh, 100vh, 100vh, 100vh);
     .title{
-      @include multi( font-size, 1rem,1rem,2rem,4rem);
-      border-bottom: 5px solid $soft_brown;
-      @include multi(padding-bottom, 1rem, 1rem, 0.5rem, 1rem);
+      @include multi( font-size, 2rem,1rem,2rem,4rem);
+      @include multi(border-bottom, 3px solid $soft_brown, 5px solid $soft_brown, 2px solid $soft_brown, 5px solid $soft_brown);
+      @include multi(padding-bottom, 0.2rem, 1rem, 0.5rem, 1rem);
       
     }
     .subtitle{

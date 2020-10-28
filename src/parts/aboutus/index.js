@@ -2,6 +2,7 @@ import React, {useRef, useState} from 'react'
 //import axios from "axios";
 import "./index.scss";
 import Menu from "../../components/menu";
+import Logo from "../../components/logoaloneizq";
 
 const AboutUsPart = () => {
     return (
@@ -19,6 +20,7 @@ const AboutUsPart = () => {
                 </div>
             </div>
            <Menu />
+           <Logo />
         </div>
     )
 }
