@@ -19,6 +19,9 @@
             padding-bottom: 3rem;
             @include multi(padding-bottom, 3rem, 3rem, 1rem, 3rem);
             opacity: 0.5;
+            a{
+                color: white !important;
+            }
         }
     }
 }
@@ -52,6 +55,9 @@
         margin-bottom: 2rem; 
         text-transform: uppercase;
         text-align: center;
+        a{
+            color: white !important;
+        }
         }
     }
 }
