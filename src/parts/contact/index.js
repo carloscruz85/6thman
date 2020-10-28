@@ -69,7 +69,7 @@ const Clients = () => {
                 <div className="row">
                     
                    <div className="col-12 col-lg-6">
-                        <div className="row">
+                        <div className="row p-0 m-0">
                             <div className="col-12 intro-form">
                                 Ready for us to come and play for you?<br /> Let us know how we can help with your creative project.
                             </div>
