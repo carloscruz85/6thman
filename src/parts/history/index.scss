@@ -42,7 +42,7 @@
         }
         .sv{
           @include multi( width, 70px, 130px, 150px, 170px);
-          @include multi( top, 300px, 375px, 340px, 270px);
+          @include multi( top, 300px, 375px, 340px, 260px);
           @include multi( left, 65px, 150px, 390px, 550px);
           height: auto;
           animation: zoom2 10s ease-in-out infinite;
