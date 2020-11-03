@@ -1,0 +1,116 @@
+@import "../../styles/index.scss";
+
+.history-container{
+  .row{
+    padding: 0;
+    margin: 0;
+  }
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  @include multi(height, 100vh, 100vh, 100vh, 100vh);
+  //border: 3px solid yellow;
+  //@include center-center();
+ // @include back-image();
+  background-image: url(../../assets/images/about-us-texture.jpg);
+  
+  .pre-maps-container{
+    @include multi(height, 100vh, 100vh, 100vh, 100vh);
+    @include center-center();
+  
+    .maps-container{
+      //border: 1px solid blue;
+      position: relative;
+      top: 0px;
+      left: 0;
+      @include multi( width, 400px, 750px, 1200px, 1920px);
+      @include multi( height, 90%, 90%, 800px, 900px);
+      //border: 3px solid red;
+       //@include center-center();
+     
+        .sv, .ca{
+          position: absolute;
+        }
+        .ca{
+          @include multi( width, 400px, 700px, 900px, 1000px);
+          height: auto;
+          @include multi( top, 200px, 200px, 100px, 0px);
+          @include multi( left, 2px, 50px, 250px, 400px);
+          height: auto;
+          animation: zoom 10s ease-in-out infinite;
+        }
+        .sv{
+          @include multi( width, 70px, 130px, 150px, 170px);
+          @include multi( top, 300px, 375px, 340px, 260px);
+          @include multi( left, 65px, 150px, 390px, 550px);
+          height: auto;
+          animation: zoom2 10s ease-in-out infinite;
+        }
+     }
+  }
+
+
+  .history-text-container{
+    @include multi(height, 100vh, 100vh, 100vh, 100vh);
+    //border: 1px solid red;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    .title{
+      @include multi(font-size, 2rem, 2rem, 1.5rem, 2.5em);
+    }
+    .subtitle{
+      @include multi(font-size, 1rem, 1rem, 0.8rem, 1.5em);
+    }
+    font-weight: normal;
+    .basic-text{
+      @include multi(font-size, 0.7rem, 1rem, 0.6rem, 0.8rem);
+      @include multi(line-height, 1rem, 1.8rem, 0.8rem, 1.8rem);
+      @include multi( letter-spacing, 0.1rem, 0.1rem, 0.1rem, 0.1rem);
+    }
+    .relative{
+      position: relative;
+    }
+    .first-text{
+      @include multi( width, 80%, 80%, 20%, 20%);
+      @include multi( top, 2%, 2%, 10%, 10%);
+      @include multi( left, 10%, 10%, 60%, 60%);
+      font-family: avenir-book;
+      .special-text{
+        position: absolute;
+        //border: 1px solid red;
+        @include multi( width, 60%, 60%, 100%, 100%);
+        @include multi( left, 45%, 50%, 0%, 0%);
+      }
+    }
+    .second-text{
+      @include multi( width, 80%, 80%, 20%, 20%);
+      @include multi( top, 50%, 50%, 50%, 20%);
+      @include multi( left, 10%, 10%, 20%, 20%);
+      font-family: avenir-book;
+
+    }
+  }
+
+
+
+
+}
+
+@keyframes zoom{
+  0%   { transform: scale(1,1); }
+  25% { transform: scale(1.1,1.1); }
+  50% {transform:  scale(1.1,1.1); }
+  75% {transform:  scale(1,1); }
+  100% { transform:  scale(1,1);}
+}
+
+@keyframes zoom2{
+  0%   { transform: scale(1,1); }
+  25% { transform: scale(1.4,1.4); }
+  50% {transform:  scale(1.4,1.4); }
+  75% {transform:  scale(1,1); }
+  100% { transform:  scale(1,1);}
+}

@@ -5,7 +5,6 @@ import Atom from "../../assets/images/atom.png";
 import Pc from "../../assets/images/pc.png";
 import Msg from "../../assets/images/msg.png";
 import Pluma from "../../assets/images/pluma.png";
-import Cel from "../../assets/images/cel.png";
 
 const Positions = () => {
 
@@ -35,16 +34,16 @@ const Positions = () => {
         }
     ];
 
-    const positionsB = [
-        {
-            title: 'UI/UX Design',
-            icon: Msg
-        },
-        {
-            title: 'Marketing assets',
-            icon: Pluma
-        }
-    ]
+    // const positionsB = [
+    //     {
+    //         title: 'UI/UX Design',
+    //         icon: Msg
+    //     },
+    //     {
+    //         title: 'Marketing assets',
+    //         icon: Pluma
+    //     }
+    // ]
 
     return (
         <div className="positions-container">
@@ -60,12 +59,12 @@ const Positions = () => {
                         {
                             positionsA.map( (d,i) =>{
                                 const titleSpace = d.title.split(' ');
-                                console.log(titleSpace);
+                                //console.log(titleSpace);
                                 return(
-                                    <div className="col-6 col-md-4 positions-item item-container">
+                                    <div key={i} className="col-6 col-md-4 positions-item item-container">
                                     <div className="example">
                                         <div className="item-title hover hover-f1 hover-3 ">
-                                            <img src={d.icon} className="icon"/>
+                                            <img alt="icon" src={d.icon} className="icon"/>
                                         </div>
                                     </div>
                                     <div className="positions-title-inner">

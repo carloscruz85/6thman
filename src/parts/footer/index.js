@@ -1,5 +1,6 @@
 import React from 'react'
 import "./index.scss";
+import {Link} from "react-router-dom";
 import Logo from "../../assets/images/6thman-logo.png";
 import Fb from "../../assets/images/fb.png";
 import Ins from "../../assets/images/ins.png";
@@ -12,7 +13,7 @@ const Footer = () => {
     const year = new Date().getFullYear();
 
     const items = [
-        {name: 'ABOUT US', link: ''},
+        {name: 'ABOUT US', link: 'aboutus'},
         {name: 'OUR WORK', link: ''},
         {name: 'OUR TEAM', link: ''},
         {name: 'SERVICES', link: ''},
@@ -41,7 +42,7 @@ const Footer = () => {
                     <ul>
                         {
                             items.map( (d, i)=>{
-                                return <li key={i}>{d.name}</li>
+                                return <li key={i}><Link to={d.link}>{d.name}</Link></li>
                             } )
                         }
                     </ul>

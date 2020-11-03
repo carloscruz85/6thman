@@ -1,12 +1,6 @@
 import React, {useRef, useState} from 'react'
 import axios from "axios";
 import "./index.scss";
-import C1 from "../../assets/images/Logos-Klipsch.png";
-import C2 from "../../assets/images/Logos-Wpromote.png";
-import C3 from "../../assets/images/Logos-BevMo.png";
-import C4 from "../../assets/images/Logos-CotéHair.png";
-import C5 from "../../assets/images/Logos-Zenni.png";
-import C6 from "../../assets/images/Logos-Event360.png";
 
 const Clients = () => {
     const first = useRef(null);
@@ -69,7 +63,7 @@ const Clients = () => {
                 <div className="row">
                     
                    <div className="col-12 col-lg-6">
-                        <div className="row">
+                        <div className="row p-0 m-0">
                             <div className="col-12 intro-form">
                                 Ready for us to come and play for you?<br /> Let us know how we can help with your creative project.
                             </div>

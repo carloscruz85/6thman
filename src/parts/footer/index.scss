@@ -17,6 +17,7 @@
         li{
             margin: 2rem 0; 
             text-transform: uppercase;
+    
         img{
             @include multi( width, 20px, 50px, 20px, 20px );
             height: auto;
@@ -51,5 +52,9 @@
         fill: white;
         @include center-center();
         cursor: pointer;
+    }
+
+    link, a{
+        color: white !important;
     }
 }

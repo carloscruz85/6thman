@@ -1,0 +1,25 @@
+@import "../../styles/index.scss";
+
+.about-us-team-container{
+  @include multi(height, auto, 100vh, 100vh, 100vh);
+  @include back-image();
+  @include center-center();
+  background-image: url(../../assets/images/about-us-team.jpg);
+  //border: 1px solid red;
+  text-align: center;
+  img{
+    width: 100%;
+    height: auto;
+  }
+  [class*="col-"] {
+    //margin: 2rem;
+    @include multi(padding, 0rem, 1rem, 5rem, 6rem);
+    @include multi(font-size, 1rem, 1rem, 0.7rem, 1rem);
+}
+
+.content{
+  opacity: 0.5;
+}
+
+}
+

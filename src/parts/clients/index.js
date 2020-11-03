@@ -21,8 +21,8 @@ const Clients = () => {
                     {
                         [C1,C2,C3,C4,C5,C6].map( (c,i) => {
                             return (
-                                <div className="col-6 col-md-4">
-                                    <img src={c} />
+                                <div key={i} className="col-6 col-md-4">
+                                    <img alt="icon" src={c} />
                                 </div>
                             )
                         } )

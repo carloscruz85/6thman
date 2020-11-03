@@ -9,7 +9,7 @@ import Footer from "../../parts/footer/";
 const App = () => {
   
   return <div>
-       <Hero />
+      <Hero />
       <Intro />
       <Positions /> 
       <Clients /> 

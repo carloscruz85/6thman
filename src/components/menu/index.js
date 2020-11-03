@@ -1,11 +1,12 @@
 import React, {useState} from "react";
+import {Link} from "react-router-dom";
 import "./index.scss";
 import Trigger from "../../assets/images/menu.png";
 
 const Menu = () => {
     const [trigger, setTrigger] = useState(true);
     const items = [
-        {name: 'ABOUT US', link: ''},
+        {name: 'ABOUT US', link: '/aboutus'},
         {name: 'OUR WORK', link: ''},
         {name: 'SERVICES', link: ''},
         {name: 'CONTACT', link: ''}
@@ -15,7 +16,7 @@ const Menu = () => {
                 <ul>
                     {
                         items.map( (d, i)=>{
-                            return <li key={i}>{d.name}</li>
+                            return <li key={i}><Link to={d.link}>{d.name}</Link></li>
                         } )
                     }
                 </ul>
@@ -23,13 +24,14 @@ const Menu = () => {
         <div className="min-menu">
             {trigger ? 
             <div className="trigger" onClick={()=>{setTrigger(false)}}>
-                <img src={Trigger} />
+                <img alt="menu" src={Trigger} />
             </div> :    
             <div className="min-menu-items">
                 <ul>
                     {
                         items.map( (d, i)=>{
-                            return <li key={i}>{d.name}</li>
+                            return <li key={i}> <Link to={d.link}>{d.name}</Link>
+                            </li>
                         } )
                     }
                     <li onClick={()=>{setTrigger(true)}}>
