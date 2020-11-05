@@ -1,0 +1,137 @@
+@import "../../styles/index.scss";
+
+.marketing-assets-top-container {
+
+  @include multi(height, auto, 100vh, 100vh, 100vh);
+
+  .title {
+    @include multi(border-bottom, 3px solid $soft_brown, 5px solid $soft_brown, 2px solid $soft_brown, 5px solid $soft_brown);
+    display: inline-block;
+  }
+
+  .text-social-assets {
+    @include multi(font-size, 1rem, 1rem, 0.7rem, 1rem);
+    @include center-center();
+    opacity: 0.5;
+
+  }
+
+  .media-resizes {
+ 
+
+    $wi: 1200px;
+    $hi: 700px;
+
+    .react-player {
+      position: absolute;
+      top: 0;
+      left: 0;
+
+    }
+
+    iframe,
+    video,
+      {
+      // background-color: #dedede;
+      @include multi(width, $wi*0.2, $wi*0.29, $wi*0.3, $wi*0.5);
+      @include multi(height, $hi*0.2, $hi*0.29, $hi*0.2, $hi*0.4);
+      overflow: hidden !important;
+      border: none;
+      display: inline-block;
+
+      * {
+        overflow: hidden !important;
+      }
+    }
+
+    iframe {
+      @include multi(height, $hi, $hi, $hi*0.3, $hi*0.4);
+
+    }
+  }
+
+  $w : 300px;
+  $h : 600px;
+
+  .cel-frame {
+    @include multi(width, $w*0.5, $w*0.9, $w*0.5, $w);
+    @include multi(height, $h*0.5, $h*0.9, $h*0.5, $h);
+    overflow: hidden !important;
+    transform: rotate(10deg);
+    position: relative;
+    @include multi(left, -2rem, -2rem, -5rem, 0rem);
+    background-color: black;
+    border-radius: 2rem;
+
+    video,
+    img {
+      @include multi(width, $w*0.5, $w*0.7, $w*0.5, $w);
+      @include multi(height, $h*0.5, $h*0.7, $h*0.5, $h);
+      z-index: 99998;
+    }
+
+    img {
+      z-index: 99999;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+
+    video {
+      @include multi(height, $h*0.95, $h*0.95, $h*0.95, $h*0.95);
+      position: relative;
+      @include multi(top, -9rem, -5rem, -8.5rem, 0.7rem);
+      @include multi(left, 0rem, -2rem, 0rem, 0rem);
+    }
+  }
+
+
+
+  .content-container {
+    @include center-center();
+
+    .content {
+      // @include center-center();
+      @include multi(width, 90%, 90%, 50%, 50%);
+      font-family: avenir-book;
+      opacity: 0.5;
+      margin-top: 1rem;
+      @include multi(line-height, 1.5rem, 2rem, 1rem, 2rem);
+      @include multi(font-size, 1rem, 2rem, 0.8rem, 1rem);
+    }
+  }
+
+}
+
+
+.animations-container{
+  // width: 100% !important;
+  // background-color: #dedede;
+  @include multi(width, 100%, 100%, 80%, 100%);
+}
+
+.ma-text-container{
+  @include multi(width, 100%, 100%, 30%, 30%);
+  h3{
+    @include multi(font-size, 1.5rem, 1.5rem, 1rem, 2rem);
+  }
+//  background-color: #454545;
+}
+
+.ma-media-container{
+ @include multi(width, 100%, 100%, 70%, 70%);
+//  background-color: #de4545;
+}
+
+// div{
+//   border: 1px solid yellow;
+// }
+
+// .row{
+//     border: 1px solid red;
+
+// }
+
+.intro-row{
+   @include multi(margin-top, 4rem, 4rem, 2rem, 2rem);
+}
