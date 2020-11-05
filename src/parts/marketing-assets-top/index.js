@@ -2,6 +2,7 @@ import React from 'react'
 import './index.scss'
 import Cel from '../../assets/images/cel-frame.png'
 import Menu from '../../components/menu'
+import Logo from '../../components/logoaloneizq'
 // import ReactPlayer from 'react-player'
 
 const MarketingAssetsTop = () => {
@@ -79,7 +80,7 @@ const MarketingAssetsTop = () => {
       </div>
 
       <Menu />
-      {/* <Logo /> */}
+      <Logo />
     </div>
   )
 }

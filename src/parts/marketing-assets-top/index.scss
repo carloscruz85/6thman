@@ -3,6 +3,8 @@
 .marketing-assets-top-container {
 
   @include multi(height, auto, 100vh, 100vh, 100vh);
+   @include back-image();
+   background-image: url(../../assets/images/BallOnCourt.jpg);
 
   .title {
     @include multi(border-bottom, 3px solid $soft_brown, 5px solid $soft_brown, 2px solid $soft_brown, 5px solid $soft_brown);
