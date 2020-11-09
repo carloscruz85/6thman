@@ -131,3 +131,13 @@
      @include multi(font-size, 0.8rem, 0.8rem, 0.8rem, 1rem);
    }
  }
+
+ Link, a{
+   color: white;
+ }
+
+ Link,
+ a:hover {
+   color: white;
+   text-decoration: none;
+ }

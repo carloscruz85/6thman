@@ -1,10 +1,12 @@
 {
 	"folders": [
 		{
-			"path": "F:\\react\\6thman"
+			"path": "."
 		}
 	],
 	"settings": {
-		"compile-hero.disable-compile-files-on-did-save-code": true
+		"compile-hero.disable-compile-files-on-did-save-code": true,
+		"emmet.extensionsPath": "",
+		"emmet.includeLanguages": { "javascript": "javascriptreact" }
 	}
 }

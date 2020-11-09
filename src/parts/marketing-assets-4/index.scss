@@ -1,0 +1,79 @@
+@import "../../styles/index.scss";
+
+.marketing-assets-4-container {
+  @include center-center();
+  @include multi(height, auto, 100vh, 100vh, 100vh);
+   @include back-image();
+   background-image: url(../../assets/images/CourtFloor.jpg);
+
+  .content-container{
+    
+    @include multi(width, 100%, 100%, 70%, 80%);
+    .text, .pc{
+      // @include multi(width, 100%, 100%, 50%, 50%);
+      @include center-center();
+      // border: 1px solid red;
+      padding: 1rem 0;
+    }
+    .pc{
+      position: relative;
+       overflow: hidden;
+       @include multi(width, 80%, 80%, 60%, 60%);
+       @include multi(left, 10%, 10%, 0%, 0%);
+       @include multi(height, 30vh, 30vh, 35vh, 40vh);
+       background-color: black;
+       
+    }
+    .text{
+      @include multi(width, 100%, 100%, 40%, 40%);
+      @include center-center();
+      .text-container{
+        @include multi(text-align, center, center, left, left);
+        @include multi(padding, 1rem, 2rem, 0, 0);
+        @include multi(width, 100%, 100%, 50%, 50%);
+        @include multi(font-size, 1rem, 1rem, 0.5rem, 1rem);
+         div{
+          opacity: 0.5;
+         }
+        
+         h3{
+           @include multi(font-size, 1.5rem, 1.5rem, 1rem, 2rem);
+         }
+      }
+    }
+    .slider-container{
+      
+      animation: Move 15s ease-in-out infinite;
+      // border: 5px solid blue;
+      @include multi(width, 100%, 100%, 90%, 90%);
+      display: flex;
+      flex-flow: row nowrap;
+      position: absolute;
+      // width: 100%;
+      top:0%;
+      z-index: 9990;
+      .slider{
+        @include multi(width, 100%, 100%, 100%, 100%);
+        height: auto;
+        // border: 1px solid yellow;
+      }
+    }
+
+    // .slider-container:hover{
+    //  animation: Move 15s ease-in-out infinite;
+
+    // }
+
+    .pc-frame{
+      position: absolute;
+      @include multi(width, 100%, 100%, 100%, 100%);
+      z-index: 9999;
+      top: 0;
+      left: 0;
+      
+    }
+  }
+}
+
+
+
