@@ -32,7 +32,7 @@
     }
 
     iframe,
-    video,
+    video
       {
       // background-color: #dedede;
       @include multi(width, $wi*0.2, $wi*0.29, $wi*0.3, $wi*0.5);

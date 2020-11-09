@@ -2,6 +2,7 @@ import React from 'react'
 import './index.scss'
 import Pc from '../../assets/images/pc-frame.png'
 import Info from '../../assets/images/infographic.jpg'
+import Cel from '../../assets/images/cel-animation.png'
 
 const MarketingAssets3 = () => {
   return (
@@ -12,6 +13,7 @@ const MarketingAssets3 = () => {
           <div className="image-container">
             <img src={Info} alt="Info" className="innerimage" />
           </div>
+          <img src={Cel} alt="cel" className="inner-cel" />
         </div>
         <div className="text">
           <div className="text-container">
