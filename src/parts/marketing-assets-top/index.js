@@ -43,20 +43,20 @@ const MarketingAssetsTop = () => {
                 <div className="media-resizes">
                   <video autoPlay muted loop>
                     <source
-                      src="http://carloscruz85.com/6thman/media/animation2.mp4"
+                      src="https://6thman.us/media/animation2.mp4"
                       type="video/mp4"
                     />
                   </video>
                   <video autoPlay muted loop>
                     <source
-                      src="http://carloscruz85.com/6thman/media/animation2.mp4"
+                      src="https://6thman.us/media/Master_1920x1040_c_name.mp4"
                       type="video/mp4"
                     />
                   </video>
-                  {/* <iframe src="http://carloscruz85.com/6thman/media/howarts.htm" title="Animation" scrolling="no"></iframe>    */}
+                  {/* <iframe src="https://6thman.us/media/howarts.htm" title="Animation" scrolling="no"></iframe>    */}
                   {/* 
                               <div class="container">
-                <iframe class="responsive-iframe" src="http://carloscruz85.com/6thman/media/howarts.htm"></iframe>
+                <iframe class="responsive-iframe" src="https://6thman.us/media/howarts.htm"></iframe>
               </div>
                               */}
                 </div>
@@ -67,7 +67,7 @@ const MarketingAssetsTop = () => {
 
                   <video autoPlay muted loop>
                     <source
-                      src="http://carloscruz85.com/6thman/media/animation3.mp4"
+                      src="https://6thman.us/media/animation3.mp4"
                       type="video/mp4"
                     />
                   </video>
