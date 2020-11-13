@@ -1,0 +1,30 @@
+@import "../../styles/index.scss";
+
+.aboutuspart-container {
+  @include multi(height, 100vh, 100vh, 100vh, 100vh);
+  //@include center-center();
+  @include back-image();
+  @include multi(background-position, 80%, 80%, center center, center center);
+  background-image: url(../../assets/images/OurWork-Hero.jpg);
+
+  .text-container {
+    @include center-center();
+    @include multi(height, 100vh, 100vh, 100vh, 100vh);
+    @include multi(padding-top, 15rem, 1rem, 0, 0);
+
+    .title {
+      @include multi(font-size, 2rem, 4rem, 2rem, 4rem);
+      @include multi(border-bottom, 3px solid $soft_brown, 5px solid $soft_brown, 2px solid $soft_brown, 5px solid $soft_brown);
+      @include multi(padding-bottom, 0.2rem, 1rem, 0.5rem, 1rem);
+    }
+
+    .subtitle {
+      @include multi(margin-top, 5rem, 5rem, 2.5rem, rem);
+      @include multi(font-size, 1rem, 1rem, 1em, 1.5rem);
+      @include multi(line-height, 2rem, 2rem, 2rem, 2rem);
+      opacity: 0.5;
+      color: white;
+      font-family: avenir-book;
+    }
+  }
+}

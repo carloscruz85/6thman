@@ -22,7 +22,7 @@ const Positions = () => {
     {
       title: 'Web development',
       icon: Pc,
-      link: '',
+      link: 'webdevelopment',
     },
     {
       title: 'UI/UX Design',

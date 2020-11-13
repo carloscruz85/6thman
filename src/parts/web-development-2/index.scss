@@ -1,0 +1,110 @@
+@import "../../styles/index.scss";
+
+.web-dev-2-container {
+  @include center-center();
+  @include multi(height, auto, 100vh, 100vh, 100vh);
+  @include back-image();
+  //  background-image: url(../../assets/images/BallOnCourt.jpg);
+
+  .content-container {
+
+    @include multi(width, 100%, 100%, 70%, 80%);
+
+    .text,
+    .pc {
+      // @include multi(width, 100%, 100%, 50%, 50%);
+      // @include center-center();
+      // border: 1px solid red;
+      padding: 1rem 0;
+    }
+
+    .pc {
+      position: relative;
+      //  overflow: hidden;
+      @include multi(width, 80%, 80%, 60%, 60%);
+      @include multi(left, 10%, 10%, 0%, 0%);
+      @include multi(height, 45vh, 45vh, 50vh, 60vh);
+    }
+
+    .text {
+      @include multi(width, 100%, 100%, 40%, 40%);
+      @include center-center();
+
+      .text-container {
+        @include multi(text-align, center, center, left, left);
+        @include multi(padding, 1rem, 2rem, 0, 0);
+        @include multi(width, 100%, 100%, 50%, 50%);
+        @include multi(font-size, 1rem, 1rem, 0.5rem, 1rem);
+
+        div {
+          opacity: 0.5;
+        }
+
+        h3 {
+          @include multi(font-size, 1.5rem, 1.5rem, 1rem, 2rem);
+        }
+      }
+    }
+
+    .image-container {
+      // border: 1px solid red;
+      @include multi(height, 30vh, 30vh, 35vh, 45vh);
+      overflow: hidden;
+
+      .innerimage {
+        animation: MoveUp 15s ease-in-out infinite;
+        width: 90%;
+        height: auto;
+        position: relative;
+        top: 0;
+        left: 0;
+      }
+    }
+
+    // .slider-container:hover{
+    //  animation: Move 15s ease-in-out infinite;
+
+    // }
+
+    .pc-frame {
+      position: absolute;
+      @include multi(width, 100%, 100%, 100%, 100%);
+      @include multi(height, 100%, 100%, 100%, 100%);
+      left: 0;
+      z-index: 8000 !important;
+      top: 0;
+    }
+  }
+}
+
+.inner-cel {
+  position: absolute;
+  @include multi(left, 0rem, -2rem, -2rem, -2rem);
+  z-index: 8000 !important;
+  bottom: 0;
+  @include multi(width, 20%, 20%, 20%, 20%);
+  transform: rotate(10deg);
+}
+
+
+@keyframes MoveUp {
+  0% {
+    top: 0;
+  }
+
+  25% {
+    top: -100%;
+  }
+
+  50% {
+    top: -200%;
+  }
+
+  75% {
+    top: -100%;
+  }
+
+  100% {
+    top: 0;
+  }
+}

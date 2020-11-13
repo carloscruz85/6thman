@@ -1,0 +1,179 @@
+@import "../../styles/index.scss";
+
+.web-development-1-top-container {
+
+ 
+
+
+.intro-container{
+  @include center-center();
+  .title {
+    @include multi(border-bottom, 3px solid $soft_brown, 5px solid $soft_brown, 2px solid $soft_brown, 5px solid $soft_brown);
+    display: inline-block;
+  }
+
+  .text {
+    @include multi(width, 90%, 90%, 50%, 50%);
+    @include multi(font-size, 1rem, 1rem, 0.8rem, 1rem);
+    @include multi(line-height, 1.5rem, 1.5rem, 1rem, 2rem);
+    @include multi(margin-top, 2rem, 2rem, 2rem, 2rem);
+    @include center-center();
+    opacity: 0.5;
+  }
+}
+
+
+
+}
+
+$step: 0.3rem;
+$conxl: 80%;
+$conlg: 80%;
+$conmd: 80%;
+$consm: 80%;
+
+
+.web-development-1-1-top-container {
+  @include center-center();
+  @include multi(height, auto, auto, 100vh, 100vh);
+  @include back-image();
+  //  background-image: url(../../assets/images/BallOnCourt.jpg);
+
+  .content-container {
+
+    @include multi(width, 100%, 100%, 70%, 80%);
+
+    .text,
+    .pc {
+      // @include multi(width, 100%, 100%, 50%, 50%);
+      // @include center-center();
+      // border: 1px solid red;
+      padding: 1rem 0;
+    }
+
+    .pc {
+      position: relative;
+      // overflow: hidden;
+      @include multi(width, 100%, 100%, 60%, 60%);
+      @include multi(left, 0%, 0%, 0%, 0%);
+      @include center-center();
+      .pc-frame-webdev1{
+         @include multi(width, $consm, $conmd, $conlg, $conxl*0.95);
+        height: auto;
+      }
+    }
+
+    .text {
+      @include multi(width, 100%, 100%, 40%, 40%);
+      @include center-center();
+
+      .text-container {
+        @include multi(text-align, center, center, left, left);
+        @include multi(padding, 1rem, 2rem, 0, 0);
+        @include multi(width, 100%, 100%, 50%, 50%);
+        @include multi(font-size, 1rem, 1rem, 0.5rem, 1rem);
+
+        div {
+          opacity: 0.5;
+        }
+
+        h3 {
+          @include multi(font-size, 1.5rem, 1.5rem, 1rem, 2rem);
+        }
+      }
+    }
+
+    .slider-container {
+     @include multi(width, $consm, $conmd, $conlg, $conxl*0.95);
+      // display: flex;
+      // flex-flow: row nowrap;
+      position: absolute;
+      top: 10%;
+      z-index: 9990;
+      
+      .slider {
+        @include multi(width, 100%, 100%, 100%, 100%);
+        position: absolute;
+        top: 0;
+        left: 0;
+      }    
+      
+      .slider:nth-child(2){
+        animation: down2 1s ease-in-out;
+      }
+      &:hover {
+        .slider:nth-child(2) {
+          top: -$step*10;
+          left: $step*10;
+          animation: up2 1s ease-in-out;
+        }
+      }
+  .slider:nth-child(3) {
+    animation: down3 1s ease-in-out;
+  }
+      &:hover {
+        .slider:nth-child(3) {
+          top: -$step*20;
+          left: $step*20;
+          animation: up3 1s ease-in-out;
+        }
+      }
+    }
+
+
+    .pc-frame {
+      @include multi(width, $consm, $conmd, $conlg, $conxl);
+      z-index: 9999;
+    }
+  }
+}
+
+@keyframes up2 {
+  0% {
+   top: 0;
+   left: 0;
+  }
+
+  100% {
+    top: -$step*10;
+    left: $step*10;
+  }
+}
+
+@keyframes up3 {
+  0% {
+    top: 0;
+    left: 0;
+  }
+
+  100% {
+    top: -$step*20;
+    left: $step*20;
+  }
+}
+
+@keyframes down2 {
+  0% {
+    
+    top: -$step*10;
+    left: $step*10;
+  }
+
+  100% {
+  top: 0;
+  left: 0;
+  }
+}
+
+@keyframes down3 {
+  0% {
+
+    top: -$step*20;
+    left: $step*20;
+  }
+
+  100% {
+    top: 0;
+    left: 0;
+  }
+}
