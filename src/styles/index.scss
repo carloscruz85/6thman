@@ -1,5 +1,5 @@
-@import "./vars.scss";
-@import "./functions.scss";
+@import './vars.scss';
+@import './functions.scss';
 
 * {
   box-sizing: border-box;
@@ -24,7 +24,6 @@
   background-position: center center;
 }
 
-
 .title {
   font-family: niveau-grotesk-small-caps, sans-serif;
   @include multi(font-size, 30px, 30px, 30px, 40px);
@@ -44,4 +43,23 @@
 
 .center-center {
   @include center-center();
+}
+
+.main-button-container {
+  @include center-center();
+  @include multi(flex-direction, row, row, column, column);
+  @include multi(align-items, center, center, flex-start, flex-start);
+  .main-button {
+    background: rgb(150, 73, 34);
+    background: linear-gradient(
+      184deg,
+      rgba(150, 73, 34, 1) 0%,
+      rgba(100, 34, 0, 1) 100%
+    );
+    padding: 1rem;
+    border-radius: 1.5rem;
+    padding: 0.5rem 2rem;
+    @include multi(font-size, 0.8rem, 0.8rem, 0.8rem, 1rem);
+    box-shadow: 1px 1px 10px black;
+  }
 }
