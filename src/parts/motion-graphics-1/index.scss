@@ -109,6 +109,7 @@
 }
 
 .animation-master-container-mobile {
+  @include multi(display, block, block, none, none);
   padding-top: 3rem;
   .intro-animation {
     margin-bottom: 0rem;

@@ -6,9 +6,10 @@ import Trigger from '../../assets/images/menu.png'
 const Menu = () => {
   const [trigger, setTrigger] = useState(true)
   const items = [
+    { name: 'HOME', link: '/' },
     { name: 'OUR TEAM', link: '/ourteam' },
     { name: 'OUR WORK', link: '/ourwork' },
-    { name: 'SERVICES', link: '' },
+    // { name: 'SERVICES', link: '' },
     { name: 'CONTACT', link: '' },
   ]
   return (
