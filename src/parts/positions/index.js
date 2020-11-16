@@ -17,7 +17,7 @@ const Positions = () => {
     {
       title: 'Motion Graphics',
       icon: Atom,
-      link: '',
+      link: 'motiongraphics',
     },
     {
       title: 'Web development',

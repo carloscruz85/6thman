@@ -23,7 +23,7 @@ const OurWork1 = () => {
     {
       title: 'Motion Graphics',
       icon: Atom,
-      link: '',
+      link: 'motiongraphics',
       image: MotionAnimation,
     },
     {
