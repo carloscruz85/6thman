@@ -6,7 +6,7 @@ import MarketingAssets from './views/marketing-assets'
 import OurWork from './views/our-work'
 import WebDev from './views/web-development'
 import MotionGraphics from './views/motion-graphics'
-
+import Ui from './views/ui'
 function App() {
   return (
     <Router>
@@ -17,6 +17,7 @@ function App() {
         <Route exact path="/ourwork" component={OurWork} />
         <Route exact path="/webdevelopment" component={WebDev} />
         <Route exact path="/motiongraphics" component={MotionGraphics} />
+        <Route exact path="/uiuxdesign" component={Ui} />
       </Switch>
     </Router>
   )

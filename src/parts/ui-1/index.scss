@@ -1,0 +1,74 @@
+@import '../../styles/index.scss';
+
+.ui-container {
+  // @include multi(height, auto, auto, 100vh, 100vh);
+  @include back-image();
+  background-image: url(../../assets/images/UI_UX.jpg);
+  .intro-ui {
+    @include center-center();
+    padding: 0;
+    margin: 0;
+  }
+
+  .title {
+    display: inline-block;
+    @include multi(font-size, 2rem, 4rem, 2rem, 4rem);
+    @include multi(
+      border-bottom,
+      3px solid $soft_brown,
+      5px solid $soft_brown,
+      2px solid $soft_brown,
+      5px solid $soft_brown
+    );
+    @include multi(margin-top, 2rem, 2rem, 2rem, 4rem);
+  }
+
+  .master-ui-container {
+    @include multi(height, auto, auto, 100vh, 100vh);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .ui-animation-container {
+      // border: 1px solid red;
+      width: 100%;
+      @include center-center();
+      .ui-inner-container {
+        // border: 1px solid blue;
+        @include multi(width, 70%, 70%, 80%, 70%);
+        display: flex;
+        .ui-animation,
+        .ui-text {
+          padding: 1rem;
+          display: flex;
+          flex-direction: row;
+          // border: 1px solid blue;
+        }
+        .ui-text {
+          width: 30%;
+          padding: 2rem;
+          @include center-center();
+          .ui-text-container {
+            background-color: rgba(0, 0, 0, 0.2);
+            padding: 2rem;
+            @include multi(font-size, 1rem, 1rem, 0.5rem, 1rem);
+          }
+        }
+        .ui-animation {
+          position: relative;
+          width: 70%;
+          @include multi(height, auto, auto, 80vh, 70vh);
+          @include back-image();
+          @include center-center();
+          background-image: url(../../assets/images/uiaux.png);
+          .ui-video {
+            @include multi(width, 40%, 40%, 40%, 40%);
+
+            position: absolute;
+            bottom: 0;
+          }
+        }
+      }
+    }
+  }
+}
