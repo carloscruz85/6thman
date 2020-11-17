@@ -39,6 +39,32 @@ const MotionGraphics = () => {
             </div>
           </div>
         </div>
+        {/* animation mobile */}
+        <div className="ui-animation-mobile-container">
+          <div className="ui-animation-mobile-inner">
+            <div className="text-container">
+              <p>
+                If you are considering building an App, quality UI/UX is
+                essential to create confidence and trust in your services, and
+                your brand.
+              </p>
+            </div>
+            <div>
+              <video autoPlay muted loop className="ui-video">
+                <source
+                  src="https://6thman.us/media/UI_UX-Vid.mp4"
+                  type="video/mp4"
+                />
+              </video>
+            </div>
+            <div className="text-container">
+              <p>
+                with intuitive interaction that is also visually pleasing,
+                therefore creating comfort and satisfaction for your users.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
 
       <Menu />
