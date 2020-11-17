@@ -1,0 +1,35 @@
+@import '../../styles/index.scss';
+
+.brand-dev-container {
+  // @include multi(height, auto, auto, 100vh, 100vh);
+  @include back-image();
+  background-image: url(../../assets/images/CourtFloor.jpg);
+  .intro-brand-dev {
+    @include center-center();
+    padding: 0;
+    margin: 0;
+    @include multi(margin, 2rem 0, 2rem 0, 0, 0);
+  }
+
+  img.brand-img {
+    width: 100%;
+    height: auto;
+  }
+
+  .title {
+    display: inline-block;
+    @include multi(font-size, 2rem, 4rem, 2rem, 4rem);
+    @include multi(
+      border-bottom,
+      3px solid $soft_brown,
+      5px solid $soft_brown,
+      2px solid $soft_brown,
+      5px solid $soft_brown
+    );
+    @include multi(margin-top, 2rem, 2rem, 2rem, 4rem);
+  }
+  .intro-aux {
+    @include multi(margin, 2rem 0, 2rem 0, 2rem 0, 4rem 0);
+    font-family: Avenir-book;
+  }
+}

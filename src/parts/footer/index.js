@@ -12,10 +12,11 @@ const Footer = () => {
   const year = new Date().getFullYear()
 
   const items = [
+    { name: 'HOME', link: '/' },
+    { name: 'OUR TEAM', link: '/aboutus' },
     { name: 'OUR WORK', link: '/ourwork' },
     { name: 'OUR TEAM', link: '/aboutus' },
-    { name: 'SERVICES', link: '' },
-    { name: 'CONTACT', link: '' },
+    { name: 'CONTACT', link: '/contact' },
   ]
 
   const sm = [

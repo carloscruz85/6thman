@@ -8,6 +8,9 @@ import WebDev from './views/web-development'
 import MotionGraphics from './views/motion-graphics'
 import Ui from './views/ui'
 import BrandDev from './views/brand-dev'
+import ContactView from './views/contact'
+import AppDev from './views/app-dev'
+
 function App() {
   return (
     <Router>
@@ -20,6 +23,8 @@ function App() {
         <Route exact path="/motiongraphics" component={MotionGraphics} />
         <Route exact path="/uiuxdesign" component={Ui} />
         <Route exact path="/branddevelopment" component={BrandDev} />
+        <Route exact path="/contact" component={ContactView} />
+        <Route exact path="/appdev" component={AppDev} />
       </Switch>
     </Router>
   )

@@ -33,7 +33,7 @@ const Positions = () => {
     {
       title: 'App Development',
       icon: Cel,
-      link: '',
+      link: 'appdev',
     },
     {
       title: 'Marketing assets',
