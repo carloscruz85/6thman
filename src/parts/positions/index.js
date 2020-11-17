@@ -27,7 +27,7 @@ const Positions = () => {
     {
       title: 'UI/UX Design',
       icon: Msg,
-      link: '',
+      link: 'uiuxdesign',
     },
     {
       title: 'App Development',
