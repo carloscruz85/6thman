@@ -10,7 +10,7 @@ const Menu = () => {
     { name: 'OUR TEAM', link: '/ourteam' },
     { name: 'OUR WORK', link: '/ourwork' },
     // { name: 'SERVICES', link: '' },
-    { name: 'CONTACT', link: '' },
+    { name: 'CONTACT', link: 'contact' },
   ]
   return (
     <div>

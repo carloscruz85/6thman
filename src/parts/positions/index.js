@@ -5,6 +5,7 @@ import Atom from '../../assets/images/atom.png'
 import Pc from '../../assets/images/pc.png'
 import Msg from '../../assets/images/msg.png'
 import Pluma from '../../assets/images/pluma.png'
+import Cel from '../../assets/images/cel.png'
 import { Link } from 'react-router-dom'
 
 const Positions = () => {
@@ -12,7 +13,7 @@ const Positions = () => {
     {
       title: 'Brand development',
       icon: Foco,
-      link: '',
+      link: 'branddevelopment',
     },
     {
       title: 'Motion Graphics',
@@ -31,7 +32,7 @@ const Positions = () => {
     },
     {
       title: 'App Development',
-      icon: Msg,
+      icon: Cel,
       link: '',
     },
     {
@@ -103,7 +104,10 @@ const Positions = () => {
                     </div> */}
         </div>
         <div className="intro-button-container">
-          <span className="intro-button">VIEW OUR WORK</span>
+          {/* /ourteam */}
+          <Link to="/ourteam">
+            <span className="intro-button">VIEW OUR WORK</span>
+          </Link>
         </div>
       </div>
     </div>

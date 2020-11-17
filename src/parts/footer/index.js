@@ -1,7 +1,7 @@
 import React from 'react'
 import './index.scss'
 import { Link } from 'react-router-dom'
-import Logo from '../../assets/images/6thman-logo.png'
+import Logo from '../../assets/images/logo-6thman.png'
 import Fb from '../../assets/images/fb.png'
 import Ins from '../../assets/images/ins.png'
 import In from '../../assets/images/in.png'

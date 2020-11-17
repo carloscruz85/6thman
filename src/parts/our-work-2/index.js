@@ -17,7 +17,7 @@ const OurWork1 = () => {
     {
       title: 'Brand development',
       icon: Foco,
-      link: '',
+      link: 'branddevelopment',
       image: RedFork,
     },
     {
@@ -35,7 +35,7 @@ const OurWork1 = () => {
     {
       title: 'UI/UX Design',
       icon: Msg,
-      link: '',
+      link: 'uiuxdesign',
       image: Uix,
     },
     {
